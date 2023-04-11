@@ -1,0 +1,310 @@
+  :root {
+    --main-color :rgb(72, 101, 194) ;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ /* Welcome page */
+.title {
+    font-weight: 600;
+    color: rgb(72, 101, 194);
+    margin: 15px;
+    font-size: 3.5rem;
+}
+  .title span { 
+       border-bottom: rgb(72, 101, 194) 3px solid;
+       color : black;
+ }
+
+ .title-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .boutons {
+     margin: 70px 50px;
+     padding: 1em 3em;
+     border-radius:35px;
+     background-color: rgb(90, 118, 209) ;
+ }
+ .boutons a {
+    font-size: 1.5rem;
+    color: white;
+ }
+ .boutons:hover {
+    background-color: black;
+    color: rgb(90, 118, 209) ;
+    
+ }
+
+   .brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-body-bg)
+   }
+     .logo {
+        margin: 1px 30px;
+     }
+
+  .logo img {
+    height: 100px;
+    width : 200px;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+  .logo img:hover {
+    filter: grayscale(0);
+  }
+
+  .header
+  {
+    background: radial-gradient(#ffff, var(--bs-body-bg));
+  }
+ 
+.footer
+{
+    margin-top: auto;
+    background-color: var(--main-color);
+}
+
+/*   Teacher  */
+
+.seances {
+     margin: 30px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+.seances a {
+    margin:5px 0px;
+}
+
+.seance-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.divide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.divide h2 {
+    color: var(--main-color);
+    border-bottom: solid black 1px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.divide a {
+    margin-left: 10px;
+}
+
+.rass-tableau {
+    background-color: var(--main-color);
+    color: white;
+}
+.mon-bouton {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    margin: 20px 15px;
+    text-decoration: none;
+    border: solid 1px black;
+}
+
+.mon-bouton:hover {
+   background-color: black;
+   color: white;
+}
+ 
+ .notif-head { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+ }
+.notif-head h1 { 
+    color: var(--main-color);
+    border-bottom: solid black 1px; 
+    margin-bottom: 20px;
+}
+.notifs {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.notifs p {
+    color: green;
+    font-size: 20px;
+    font-weight: 550;
+     margin-bottom: 0;
+     margin-right: 10px;
+}
+.tableau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.index-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.index-header h1 { 
+    color: var(--main-color);
+    border-bottom: solid black 1px;
+}
+
+.tableau form {
+    width : 60%;
+}
+
+.edit-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:15px;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:15px;
+}
+.edit-button button {
+    width: 50%;
+}
+
+label {
+     margin: 10px 0px;
+     color: var(--main-color);
+     font-size: 20px;
+}
+
+ .form-edit {
+    border: solid 2px var(--main-color);
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+
+.check-box {
+    margin-left:15px;
+}
+
+.notifications {
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.notifications a {
+    margin-left: 10px;
+}
+
+
+.photo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.s-title {
+    color: var(--main-color);
+    border-bottom: solid black 1px;
+    display: inline-block;
+    margin:10px 0px 20px 0px ;
+}
+
+.text-alert {
+    color:red;
+    font-weight: 600;
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 180px;
+    border: solid var(--main-color) 2px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    background-color: var(--bs-body-bg);
+    border-radius:30px;
+    padding: 0.5rem 1.3rem;
+    border: solid 1px var(--main-color);
+    margin-left: 3px;
+}
+.search-bar::placeholder {
+    color: var(--main-color);
+}
+
+.sr {
+    margin-right: 20px;
+}
+
+.text-blue {
+    color: rgb(19, 73, 250);
+    background-color: rgb(193, 193, 252);
+    border-radius:15px ;
+}
+.search p {
+    padding: 1rem 1.3rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px rgb(19, 73, 250) solid;
+    
+}
+
+.search {
+    background-color: var(--bs-body-bg);
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 70px;
+    border-radius: 15px;
+    border: 1px var(--main-color) solid;
+
+}
+.wrapper {
+    background-color: rgb(253, 253, 253);
+    padding: 30px 13px 50px 13px;
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.profile h1 {
+    margin-left: 30px;
+}
